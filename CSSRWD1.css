@@ -1,0 +1,124 @@
+/*General Body Styles*/
+body {
+    background: url('poodles.jpg') no-repeat top/cover;
+    color: white;
+    font-family: "Lucida Console","Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Header Styling*/
+h1 {
+    color: white;
+    text-align: center;
+    background-color: rgba(64, 64, 64, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+}
+/*Navigation Bar*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.navbar ul {
+    border: 2px ridge white;
+    border-radius: 10px;
+    background-color: rgba(64, 64, 64, 0.75);
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 30px;
+    display: inline;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+/*Main Section*/
+main {
+    padding-top: 100px;
+}
+.section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px ridge white;
+    border-radius: 10px;
+    background-color: rgba(64, 64, 64, 0.40);
+}
+/*Introduction Paragraph Container*/
+.intro {
+    margin: 20px;
+    padding: 22px; 
+    overflow: hidden;
+}
+/*Footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(64, 64, 64, 0.75);
+    color: white;
+    text-align: center;
+}
+.footer a:link {
+    color: white;
+    text-decoration: underline;
+}
+.footer a:hover {
+    color: black;
+}
+/*Responsive Design*/
+/*Tablet View (max-width: 768px)*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar li {
+        padding: 10px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .section {
+        width: 80%;
+        padding: 15px;
+    }
+    img {
+        width: 70%;
+    }
+}
+/*Mobile View (max-width: 480px)*/
+@media (max-width: 480px) {
+    .section {
+        width: 90%;
+        padding: 10px;
+    }
+    img {
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .footer {
+        padding: 5px;
+    }
+}
